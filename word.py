@@ -1,6 +1,6 @@
 # 필요한 라이브러리 import from wordclou - [Web발신]
 # 필요한 라이브러리 import
-from wordcloud import WordCloud
+#from wordcloud import WordCloud
 import matplotlib.pyplot as plt
 from collections import Counter
 from konlpy.tag import Okt
