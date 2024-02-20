@@ -1,23 +1,3 @@
-# 필요한 라이브러리 import from wordclou - [Web발신]
-# 필요한 라이브러리 import
-#from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-from collections import Counter
-from konlpy.tag import Okt
-from konlpy.utils import pprint
-import nltk
-
-# 텍스트 데이터 불러오기
-text = open('D:/SKEC Files/Documents/PPM.txt', 'r', encoding='utf-8').read()
-
-# 전처리
-#okt = Okt()
-#tokens = okt.nouns(text)
-#count = Counter(tokens)
-
-# 전처리
-okt = Okt()
-
 # 텍스트 토큰화 (Tokenization)
 # 필요한 라이브러리 import
 from wordcloud import WordCloud
@@ -64,7 +44,6 @@ count = Counter(filtered_tokens)
 
 wordcloud = WordCloud(font_path='c:/Windows/Fonts/Malgun.ttf', background_color='white')
 wordcloud.generate_from_frequencies(count)
-
 
 
 # 시각화
